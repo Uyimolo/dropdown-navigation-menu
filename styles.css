@@ -33,10 +33,18 @@ p {
 .container{
     width: 100vw;
     height: 100vh;
+    background-color: var(--white);
+    overflow: hidden;
+    display: grid;
+    align-items: center;
+
+}
+.page-content{
     display: flex;
     flex-direction: column;
     padding: 4em 0;
-    background-color: var(--white);
+    height: 100%;
+    width: 100%;
 }
 .header{
     width: 100%;
@@ -97,9 +105,11 @@ p {
     overflow: hidden;
     transition: .5s;
     color: var(--black);
+    position: relative;
 }
 .show-drop-down {
     padding:1em 1.5em  0.1em;
+    
 }
 .user{
     display: flex;
@@ -124,7 +134,8 @@ p {
     flex-direction: column;
     padding: 1em;
     justify-content: space-between;
-    height: 100%;
+    gap: 2em;
+    position: relative;
 }
 .cta {
     padding: 1em;
@@ -143,16 +154,15 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    justify-self: flex-end;
 }
 .client{
     width: 4.2em;
 }
 @media only screen and (min-width : 768px ) {
-    :root{
-        font-size: 16px;
-    }
 h1{
     font-size: 3.5em;
+    position: relative;
 }
 p{
     font-size: 1.5em;
@@ -167,6 +177,7 @@ p{
         align-self: center;
         background-color: transparent;
         transform: translateX(0) translateY(8px);
+        z-index:1;
     }
     .header ul{
         display: flex;
@@ -181,7 +192,6 @@ p{
        flex-direction: column;
        left: 0;
        top: 3em;
-       overflow:hidden;
        background-color: #fff;
        border-radius: 1em;
     }
@@ -203,71 +213,68 @@ p{
     }
 }
 @media only screen and (min-width : 1024px ) {
+    :root{
+        font-size: 17px;
+    }
     .container{
-        flex-direction: row-reverse;
-        padding: 2% 10%;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
+        padding:5em  7em;
+        height: 100vh;
     }
     h1{
         text-align: left;
         font-size: 3em;
-        width: 83%;
+        width: 330px;
     }
     p{
         text-align: left;
         font-size: .9em;
-        width: 80%;
+        width: 300px;
     }
     .header{
         padding:3% 5% ;
     }
+    .page-content{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 100%;
+        width: 100%;
+        height: 100%;
+       background-color: var(--white);
+       padding: 0;
+    }
     .hero{
         background: url(images/image-hero-desktop.png) no-repeat;
-        width: 100%;
-        max-width: 420px;
-        height: 100%;
-        background-size: 80%;
-        background-position: center;
-        padding: 0;
+        background-size: 100%;
+        grid-column: 2;
+        width:330px;
+        grid-row: 1;
+        justify-self: end;
+        transform: translateX(-2em);
     }
     .hero img{
         display: none;
     }
     .brand{
-        width: 100%;
-        justify-content: center;
-        gap: 25px;
-        position: relative;
-    }  
+        flex-basis: 46%;
+        grid-column: 1;
+        align-self: end;
+    }
     .cta{
-        margin: 0;   
+        margin: 0 0 2em;
     }
     .clients{
-        justify-self:flex-end;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding:0 10% 10% 0;
+        width: 80%;
+        gap: 30px;
     }
 }
 @media only screen and (min-width : 1440px ) {
     :root{
         font-size: 18px;
     }
+    .container{
+        padding:5.5em 10em;
+    }
     h1{
-        font-size: 4em;
-        width: 87%;
-    }
-    .hero{
-        background-size: 100%;
-        max-width: 380px;
-        margin-top: 6%;
-    }
-    .brand{
-        max-width: 650px;
-        padding-top: 10%;
+        width: 350px;
     }
 }
