@@ -224,14 +224,13 @@ p{
         padding:3% 5% ;
     }
     .hero{
-        background: url(/images/image-hero-desktop.png) no-repeat;
+        background: url(images/image-hero-desktop.png) no-repeat;
         width: 100%;
         max-width: 420px;
         height: 100%;
         background-size: 80%;
         background-position: center;
         padding: 0;
-        
     }
     .hero img{
         display: none;
@@ -241,11 +240,9 @@ p{
         justify-content: center;
         gap: 25px;
         position: relative;
-    }
-   
+    }  
     .cta{
-        margin: 0;
-        
+        margin: 0;   
     }
     .clients{
         justify-self:flex-end;
@@ -254,7 +251,6 @@ p{
         left: 0;
         width: 100%;
         padding:0 10% 10% 0;
-
     }
 }
 @media only screen and (min-width : 1440px ) {
@@ -275,4 +271,3 @@ p{
         padding-top: 10%;
     }
 }
-
