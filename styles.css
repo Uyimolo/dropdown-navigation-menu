@@ -11,6 +11,10 @@
   --black: hsl(0, 0%, 8%);
   --purple: rgb(133, 87, 163);
 }
+body{
+  height:100vh;
+  width:100vw;
+  overflow:hidden;
 a {
   color: var(--black);
   text-decoration: none;
@@ -31,8 +35,8 @@ p {
   color: var(--text-color);
 }
 .container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: var(--white);
   display: grid;
   align-items: center;
