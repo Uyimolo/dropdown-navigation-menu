@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Montserrat+Alternates:wght@300&display=swap"
@@ -14,6 +13,7 @@
   </head>
   <body>
     <div class="container">
+      <div class="blanket"></div>
       <header class="header">
         <img src="images/logo.svg" alt="snap logo" class="logo" />
         <div class="header-content">
@@ -22,7 +22,7 @@
           </div>
           <nav class="navbar">
             <ul>
-              <li class="nav-list">
+              <li class="nav-list drop-parent">
                 features
                 <span
                   ><img class="arrow" src="images/icon-arrow-down.svg" alt=""
@@ -48,7 +48,7 @@
                 </ul>
               </li>
 
-              <li class="nav-list">
+              <li class="nav-list drop-parent">
                 company
                 <span
                   ><img class="arrow" src="images/icon-arrow-down.svg" alt=""
@@ -77,31 +77,31 @@
         </div>
       </header>
       <div class="page-content">
-      <section class="hero">
-        <img src="images/image-hero-mobile.png" alt="" />
-      </section>
+        <section class="hero">
+          <img src="images/image-hero-mobile.png" alt="" />
+        </section>
 
-      <section class="brand">
-        <h1>Make remote work</h1>
+        <section class="brand">
+          <h1>Make remote work</h1>
 
-        <p class="copy">
-          Get your team in sync, no matter your location. Streamline processes,
-          ceate team rituals, and watch productivity soar.
-        </p>
+          <p class="copy">
+            Get your team in sync, no matter your location. Streamline
+            processes, ceate team rituals, and watch productivity soar.
+          </p>
 
-        <button class="cta">Learn more</button>
+          <button class="cta">Learn more</button>
 
-        <div class="clients">
-          <img src="images/client-databiz.svg" alt="Databiz" class="client" />
-          <img
-            src="images/client-audiophile.svg"
-            alt="Audiophile"
-            class="client"
-          />
-          <img src="images/client-meet.svg" alt="meet" class="client" />
-          <img src="images/client-maker.svg" alt="maker" class="client" />
-        </div>
-      </section>
+          <div class="clients">
+            <img src="images/client-databiz.svg" alt="Databiz" class="client" />
+            <img
+              src="images/client-audiophile.svg"
+              alt="Audiophile"
+              class="client"
+            />
+            <img src="images/client-meet.svg" alt="meet" class="client" />
+            <img src="images/client-maker.svg" alt="maker" class="client" />
+          </div>
+        </section>
       </div>
     </div>
     <script src="index.js"></script>
