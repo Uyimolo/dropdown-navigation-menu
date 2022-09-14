@@ -56,7 +56,6 @@ p {
   top: 0;
   left: 0;
   overflow: hidden;
-  z-index: 5;
 }
 .logo {
   cursor: pointer;
@@ -246,6 +245,8 @@ p {
     display: none;
   }
   .blanket {
+    height: 100vh;
+    width: 100vw;
     display: none;
   }
 }
@@ -300,18 +301,18 @@ p {
     height: 100%;
     max-height: 450px;
     align-self: flex-end;
-
+ 
     flex-basis: 46%;
     grid-column: 1;
     display: flex;
   }
   .cta {
-    margin: 0% 0 0 ;
+    margin: 0% 0 0;
   }
   .clients {
     width: 80%;
     gap: 30px;
-    margin-top: 2.7em;
+    margin-top:2.7em ;
   }
 }
 @media only screen and (min-width: 1300px) {
